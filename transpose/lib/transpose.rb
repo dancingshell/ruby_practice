@@ -1,13 +1,9 @@
 def solution (arr)
   i = 0
   result = []
-  array_count = arr.count
-  array_count.times { result << [] }
-
+  arr.count.times { result << [] }
   while i < arr.count
-    arr.each do |array|
-      result[i] << array[i]
-    end
+    arr.each { |array| result[i] << array[i] }
     i += 1
   end
   result
