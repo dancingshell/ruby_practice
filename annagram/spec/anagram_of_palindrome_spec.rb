@@ -12,4 +12,16 @@ describe "solution" do
     expect(solution("aabcba")).to eq(0)
   end
 
+  it "should return 0 with non matching odd occuances greater than 1" do 
+    expect(solution("aaabbc")).to eq(0)
+  end
+
+  it "should return 1 with matching odd occuances greater than 1 in odd length phrase" do 
+    expect(solution("aaabbbc")).to eq(1)
+  end
+
+  it "should return 1 with matching odd occuances greater than 1 in even length phrase" do 
+    expect(solution("aaabbbcc")).to eq(1)
+  end
+
 end
